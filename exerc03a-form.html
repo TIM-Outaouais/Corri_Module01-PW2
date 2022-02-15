@@ -27,20 +27,20 @@ label{margin:5px; padding:5px;}
 	<fieldset><legend>Coordonnées</legend>
 		<p>
 			<label for="prenom">Prénom: 
-				<input type="text" name="prenom" id="prenom" tabindex="1" />
+				<input type="text" name="prenom" id="prenom" tabindex="3" />
 			</label>
 			<label for="nom">Nom: 
-				<input type="text" name="nom" id="nom" tabindex="2" />
+				<input type="text" name="nom" id="nom" tabindex="4" />
 			</label>
 		</p>
 		<p>
 			<label for="rue">Rue: 
-				<input type="text" name="rue" id="rue" tabindex="2" placeholder="no civique, nom de rue" />
+				<input type="text" name="rue" id="rue" tabindex="5" placeholder="no civique, nom de rue" />
 			</label>
 		</p>
 		<p>
 		<label for="ville">Ville: 
-			<select name="ville" id="choix" tabindex="4">
+			<select name="ville" id="choix" tabindex="6">
 				<option value="NUL">----</option>
 				<option value="Montreal">Montréal</option>
 				<option value="Quebec">Québec</option>
@@ -52,7 +52,7 @@ label{margin:5px; padding:5px;}
 			</select>
 		</label>
 		<label for="ville">Province: 
-			<select name="ville" id="choix" tabindex="4">
+			<select name="ville" id="choix" tabindex="7">
 				<option value="NUL">----</option>
 				<option value="1">l'Île-du-Prince-Édouard</option>
 				<option value="2">Terre-Neuve et Labrador</option>
@@ -72,20 +72,20 @@ label{margin:5px; padding:5px;}
 		</p>
 		<p>
 			<label for="telMais">Téléphone à la maison: 
-				<input type="tel" name="telMais" id="telMais" tabindex="4" placeholder="819-123-4567" />
+				<input type="tel" name="telMais" id="telMais" tabindex="8" placeholder="819-123-4567" />
 			</label>
 		</p>
 		<p>
 			<label for="telTravail">Téléphone au travail: 
-				<input type="tel" name="telTravail" id="telTravail" tabindex="6" placeholder="819-123-4567" />
+				<input type="tel" name="telTravail" id="telTravail" tabindex="9" placeholder="819-123-4567" />
 			</label>
 			<label for="cel">Téléphone mobile: 
-				<input type="tel" name="cel" id="cel" tabindex="7" placeholder="819-123-4567" />
+				<input type="tel" name="cel" id="cel" tabindex="10" placeholder="819-123-4567" />
 			</label>
 		</p>
 		<p>
 			<label for="courriel">Courriel: 
-				<input type="email" name="courriel" id="courriel" tabindex="8" placeholder="nom@domain" />
+				<input type="email" name="courriel" id="courriel" tabindex="11" placeholder="nom@domain" />
 			</label>
 		</p>
 		
@@ -93,34 +93,34 @@ label{margin:5px; padding:5px;}
 	<fieldset><legend>Préférences</legend>
 		<p>
 			<label for="dateNaissance">Date de naissance: 
-				<input type="date" min="1980" max="2010" id="dateNaissance" name="dateNaissance" tabindex="" />
+				<input type="date" min="1980" max="2010" id="dateNaissance" name="dateNaissance" tabindex="12" />
 			</label>
 		</p>
 		<p>
 			<label for="couleurTheme">Couleur préférée pour le thème:
-				<input type="color" id="couleurTheme" name="couleurTheme" tabindex="" />
+				<input type="color" id="couleurTheme" name="couleurTheme" tabindex="13" />
 			</label>
 		</p>
 		<p>
 			<label for="avatar">Choisir une photo pour l’avatar: 
-				<input type="file" id="avatar" name="avatar" tabindex="" />
+				<input type="file" id="avatar" name="avatar" tabindex="14" />
 			</label>
 		</p>	
 		<section id="Horaire">
 		<h4>Horaire de cours</h4>
 			<p>
 				<label for="hmatin">
-					<input type="radio" id="hmatin" name="horaire" tabindex="" /> de 8h à 11h
+					<input type="radio" id="hmatin" name="horaire" tabindex="15" /> de 8h à 11h
 				</label>
 			</p>
 			<p>
 				<label for="hmidi">
-					<input type="radio" id="hmidi" name="horaire" tabindex="" />de 12 h à 15 h
+					<input type="radio" id="hmidi" name="horaire" tabindex="16" />de 12 h à 15 h
 				</label>
 			</p>
 			<p>	
 				<label for="hsoir">
-					<input type="radio" id="hsoir" name="horaire" tabindex="" />de 15 h à 18 h 
+					<input type="radio" id="hsoir" name="horaire" tabindex="17" />de 15 h à 18 h 
 				</label>
 			</p>
 		</section>
@@ -128,30 +128,30 @@ label{margin:5px; padding:5px;}
 		<h4>Cours inscrits</h4>
 			<p>
 				<label for="CoursPW2">
-					<input type="checkbox" id="CoursPW2" name="CoursPW2" tabindex="" />Programmation Web 2
+					<input type="checkbox" id="CoursPW2" name="CoursPW2" tabindex="18" />Programmation Web 2
 				</label>
 			</p>
 			<p>	
 				<label for="CoursIW2">
-					<input type="checkbox" id="CoursIW2" name="CoursIW2" tabindex="" />Intégration Web 2
+					<input type="checkbox" id="CoursIW2" name="CoursIW2" tabindex="19" />Intégration Web 2
 				</label>
 			</p>
 			<p>	
 			<label for="CoursPM">
-				<input type="checkbox" id="CoursPM" name="CoursPM" tabindex="" />Présentation multimédia
+				<input type="checkbox" id="CoursPM" name="CoursPM" tabindex="20" />Présentation multimédia
 			</label>
 			</p>
 		</section>
 	</fieldset>
 	<fieldset>
 		<p>
-			<label for="btEfface">Effacer
-				<input type="reset" value="Efface" id="btEfface" name="btEfface" tabindex="6" />
+			<label for="btEnvoyer">Envoyez
+				<input type="submit" value="Envoyez" id="btEnvoyer" name="btEnvoyer" tabindex="21" />
 			</label>
 		</p>
 		<p>
-			<label for="btEnvoyer">Envoyez
-				<input type="submit" value="Envoyez" id="btEnvoyer" name="btEnvoyer" tabindex="5" />
+			<label for="btEfface">Effacer
+				<input type="reset" value="Efface" id="btEfface" name="btEfface" tabindex="22" />
 			</label>
 		</p>
 	</fieldset>
