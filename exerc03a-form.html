@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<title>Formulaire HTML- WCAG</title>
+<style>
+p, input {display:flex;} 
+section label {display:flex; margin:2px; padding:2px;} 
+label{margin:5px; padding:5px;}
+</style>
+</head>
+<body>
+<form id="formulaire" action="#" method="post" >
+	<fieldset><legend>Connection au site</legend>
+		<p>
+			<label for="user">Nom d'utilisateur: 
+				<input type="text" name="user" id="user" tabindex="1" />
+			</label>
+		</p>
+		<p>
+			<label for="motpasse">Mot de passe: 
+				<input type="password" name="motpasse" id="motpasse" tabindex="2" />
+			</label>
+		</p>
+	</fieldset>
+
+	<fieldset><legend>Coordonnées</legend>
+		<p>
+			<label for="prenom">Prénom: 
+				<input type="text" name="prenom" id="prenom" tabindex="1" />
+			</label>
+			<label for="nom">Nom: 
+				<input type="text" name="nom" id="nom" tabindex="2" />
+			</label>
+		</p>
+		<p>
+			<label for="rue">Rue: 
+				<input type="text" name="rue" id="rue" tabindex="2" placeholder="no civique, nom de rue" />
+			</label>
+		</p>
+		<p>
+		<label for="ville">Ville: 
+			<select name="ville" id="choix" tabindex="4">
+				<option value="NUL">----</option>
+				<option value="Montreal">Montréal</option>
+				<option value="Quebec">Québec</option>
+				<option value="Gatineau" selected>Gatineau</option>
+				<option value="TroisRiviere">Trois-Rivière</option>
+				<option selected value="Sherbrooke">Sherbrooke</option>
+				<option selected value="Aylmer">Aylmer</option>
+				<option selected value="Alma">Alma</option>
+			</select>
+		</label>
+		<label for="ville">Province: 
+			<select name="ville" id="choix" tabindex="4">
+				<option value="NUL">----</option>
+				<option value="1">l'Île-du-Prince-Édouard</option>
+				<option value="2">Terre-Neuve et Labrador</option>
+				<option value="4">Nouvelle-Écosse</option>
+				<option value="3">Nouveau-Brunswick</option>
+				<option value="5">Québec</option>
+				<option value="6">Ontario</option>
+				<option value="8">Manitoba</option>
+				<option value="7">Saskatchewan</option>
+				<option value="9">Alberta</option>
+				<option value="18">Colombie-Britanique</option>
+				<option value="11">Youkon</option>
+				<option value="12">Territoire du Nord Ouest</option>
+				<option value="13">Nunavut</option>
+			</select>
+		</label>
+		</p>
+		<p>
+			<label for="telMais">Téléphone à la maison: 
+				<input type="tel" name="telMais" id="telMais" tabindex="4" placeholder="819-123-4567" />
+			</label>
+		</p>
+		<p>
+			<label for="telTravail">Téléphone au travail: 
+				<input type="tel" name="telTravail" id="telTravail" tabindex="6" placeholder="819-123-4567" />
+			</label>
+			<label for="cel">Téléphone mobile: 
+				<input type="tel" name="cel" id="cel" tabindex="7" placeholder="819-123-4567" />
+			</label>
+		</p>
+		<p>
+			<label for="courriel">Courriel: 
+				<input type="email" name="courriel" id="courriel" tabindex="8" placeholder="nom@domain" />
+			</label>
+		</p>
+		
+	</fieldset>
+	<fieldset><legend>Préférences</legend>
+		<p>
+			<label for="dateNaissance">Date de naissance: 
+				<input type="date" min="1980" max="2010" id="dateNaissance" name="dateNaissance" tabindex="" />
+			</label>
+		</p>
+		<p>
+			<label for="couleurTheme">Couleur préférée pour le thème:
+				<input type="color" id="couleurTheme" name="couleurTheme" tabindex="" />
+			</label>
+		</p>
+		<p>
+			<label for="avatar">Choisir une photo pour l’avatar: 
+				<input type="file" id="avatar" name="avatar" tabindex="" />
+			</label>
+		</p>	
+		<section id="Horaire">
+		<h4>Horaire de cours</h4>
+			<p>
+				<label for="hmatin">
+					<input type="radio" id="hmatin" name="horaire" tabindex="" /> de 8h à 11h
+				</label>
+			</p>
+			<p>
+				<label for="hmidi">
+					<input type="radio" id="hmidi" name="horaire" tabindex="" />de 12 h à 15 h
+				</label>
+			</p>
+			<p>	
+				<label for="hsoir">
+					<input type="radio" id="hsoir" name="horaire" tabindex="" />de 15 h à 18 h 
+				</label>
+			</p>
+		</section>
+		<section id="CoursInscrits">
+		<h4>Cours inscrits</h4>
+			<p>
+				<label for="CoursPW2">
+					<input type="checkbox" id="CoursPW2" name="CoursPW2" tabindex="" />Programmation Web 2
+				</label>
+			</p>
+			<p>	
+				<label for="CoursIW2">
+					<input type="checkbox" id="CoursIW2" name="CoursIW2" tabindex="" />Intégration Web 2
+				</label>
+			</p>
+			<p>	
+			<label for="CoursPM">
+				<input type="checkbox" id="CoursPM" name="CoursPM" tabindex="" />Présentation multimédia
+			</label>
+			</p>
+		</section>
+	</fieldset>
+	<fieldset>
+		<p>
+			<label for="btEfface">Effacer
+				<input type="reset" value="Efface" id="btEfface" name="btEfface" tabindex="6" />
+			</label>
+		</p>
+		<p>
+			<label for="btEnvoyer">Envoyez
+				<input type="submit" value="Envoyez" id="btEnvoyer" name="btEnvoyer" tabindex="5" />
+			</label>
+		</p>
+	</fieldset>
+</form>
+</body>
+</html>
