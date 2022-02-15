@@ -40,7 +40,7 @@ label{margin:5px; padding:5px;}
 		</p>
 		<p>
 		<label for="ville">Ville: 
-			<select name="ville" id="choix" tabindex="6">
+			<select name="ville" id="ville" tabindex="6" multiple>
 				<option value="NUL">----</option>
 				<option value="Montreal">Montréal</option>
 				<option value="Quebec">Québec</option>
@@ -51,8 +51,8 @@ label{margin:5px; padding:5px;}
 				<option selected value="Alma">Alma</option>
 			</select>
 		</label>
-		<label for="ville">Province: 
-			<select name="ville" id="choix" tabindex="7">
+		<label for="province">Province: 
+			<select name="province" id="province" tabindex="7" multiple>
 				<option value="NUL">----</option>
 				<option value="1">l'Île-du-Prince-Édouard</option>
 				<option value="2">Terre-Neuve et Labrador</option>
@@ -93,7 +93,7 @@ label{margin:5px; padding:5px;}
 	<fieldset><legend>Préférences</legend>
 		<p>
 			<label for="dateNaissance">Date de naissance: 
-				<input type="date" min="1980" max="2010" id="dateNaissance" name="dateNaissance" tabindex="12" />
+				<input type="date" id="dateNaissance" name="dateNaissance" tabindex="12" />
 			</label>
 		</p>
 		<p>
